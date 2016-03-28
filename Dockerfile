@@ -33,3 +33,4 @@ RUN chmod 755 /start.sh
 CMD ["/bin/bash", "/start.sh"]
 
 EXPOSE 22
+EXPOSE 80
