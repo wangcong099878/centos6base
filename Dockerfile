@@ -24,4 +24,12 @@ RUN echo "plk789" | passwd --stdin "root"
 
 ### volumes
 ## ssh pub key
-VOLUME ["/home/dev/.ssh"]
+#VOLUME ["/home/dev/.ssh"]
+
+### main
+ADD ./start.sh /start.sh
+RUN chmod 755 /start.sh
+
+CMD ["/bin/bash", "/start.sh"]
+
+EXPOSE 22

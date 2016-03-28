@@ -7,7 +7,7 @@ source $DIR/config.sh
 
 #( useradd dev >/dev/null ) && ( ssh-keygen -t rsa -C "dev.work" )
 
-
+#docker ps | grep centos6 | awk '{print $1}' | xargs  docker inspect --format='{{.NetworkSettings.IPAddress}}'
 IP_ADDRESS=`docker ps | grep $BASE_NAME | awk '{print $1}' | xargs  docker inspect --format='{{.NetworkSettings.IPAddress}}'`
 
 

@@ -31,3 +31,5 @@ docker run --name=$BASE_NAME -d \
 	-v "$DIR"/../logs:/home/dev/logs \
 	-v "$DIR"/../.ssh:/home/dev/.ssh \
         $IMAGE_ID
+
+#docker run registry.aliyuncs.com/wangcong/centos6base
